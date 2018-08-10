@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FinalProject.xcodeproj">
+      location = "group:/Users/2020noal/Desktop/Final-Project/FinalProject/thanks.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
