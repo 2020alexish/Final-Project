@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+>>>>>>> 77f6f17bf42b0e36918fa434e9c76e00613920a8
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+<<<<<<< HEAD
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+>>>>>>> 77f6f17bf42b0e36918fa434e9c76e00613920a8
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+        <array key="Hey Pretty Girl.ttf">
+            <string>HeyPrettyGirl</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -21,6 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCp-Ap-PrG">
                                 <rect key="frame" x="16" y="78" width="341" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -134,10 +151,212 @@
                         <outlet property="typeinput" destination="10P-Tl-uL5" id="KYF-m5-g71"/>
                         <outlet property="usernameinput" destination="3u7-aU-UCj" id="y0H-Ot-xJQ"/>
                         <segue destination="CXT-NV-jqN" kind="show" identifier="EditToProfile" id="CVT-GW-gkX"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD1-bR-hwg">
+                                <rect key="frame" x="50" y="59" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What hurts?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kUC-n4-FgY">
+                                <rect key="frame" x="103" y="456" width="142" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjr-JV-3xC">
+                                <rect key="frame" x="-22" y="278" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="G9y-ZW-Jpp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="H7C-if-d6X"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What medication did you take?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rf2-Rw-RsF">
+                                <rect key="frame" x="50" y="278" width="346" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Have you taken any medication in the past day? " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5v-3A-lTL">
+                                <rect key="frame" x="43" y="207" width="291" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2l-zG-2bp">
+                                <rect key="frame" x="69" y="249" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="20"/>
+                                <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="pressedyes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcH-Y2-j5u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jh-tp-aji">
+                                <rect key="frame" x="245" y="249" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="20"/>
+                                <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="pressedno:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F92-Ed-0hV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Thank You For Completing This Survey!" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jg2-BF-h8J">
+                                <rect key="frame" x="43" y="301" width="276" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paq-YI-Cru">
+                                <rect key="frame" x="138" y="424" width="98" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZr-4G-gy2">
+                                <rect key="frame" x="16" y="488" width="48" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="💪"/>
+                                <connections>
+                                    <action selector="clickedarmbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsR-Ie-Aep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QV-sh-n1c">
+                                <rect key="frame" x="132" y="486" width="47" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="👖"/>
+                                <connections>
+                                    <action selector="clickedlegbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTk-8G-40V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Pain Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcX-qh-dXE">
+                                <rect key="frame" x="131" y="35" width="130" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grB-1h-OaV">
+                                <rect key="frame" x="195" y="497" width="48" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="👣"/>
+                                <connections>
+                                    <action selector="clickedfootbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qK3-OI-VSy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atg-gg-58Q">
+                                <rect key="frame" x="255" y="487" width="41" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="✋"/>
+                                <connections>
+                                    <action selector="clickedfootbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Moj-FE-PTb"/>
+                                    <action selector="clickedhandbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Fa-YJ-L8i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-Va-87z">
+                                <rect key="frame" x="94" y="567" width="51" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="😵"/>
+                                <connections>
+                                    <action selector="dizzyclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQf-m9-qEu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhm-Ru-Stg">
+                                <rect key="frame" x="171" y="567" width="51" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="🤢"/>
+                                <connections>
+                                    <action selector="dizzyclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71F-cw-33V"/>
+                                    <action selector="nauseaclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKQ-uh-tEF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTk-Hc-lhi">
+                                <rect key="frame" x="250" y="566" width="51" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="🤒"/>
+                                <connections>
+                                    <action selector="dizzyclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n55-7s-N9c"/>
+                                    <action selector="feverclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N39-7w-H2V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tm-R5-riJ">
+                                <rect key="frame" x="311" y="494" width="48" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="🚫"/>
+                                <connections>
+                                    <action selector="nothinghurts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bi7-Eq-5JW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="How would you rate your pain?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMX-vM-ylR">
+                                <rect key="frame" x="103" y="67" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEz-fK-CwT">
+                                <rect key="frame" x="75" y="494" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="👤"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="What are your symptoms?" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qqs-9Q-f9n">
+                                <rect key="frame" x="61" y="538" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="sEd-Na-HJu"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="armbutton" destination="zZr-4G-gy2" id="GZ2-cS-RD2"/>
+                        <outlet property="dizzy" destination="Ggy-Va-87z" id="pDh-h2-uQn"/>
+                        <outlet property="fever" destination="xTk-Hc-lhi" id="Opd-Jt-Zmj"/>
+                        <outlet property="footbutton" destination="grB-1h-OaV" id="X2U-Aq-jsW"/>
+                        <outlet property="handbutton2" destination="Atg-gg-58Q" id="dPO-Kp-OCg"/>
+                        <outlet property="headbutton" destination="fEz-fK-CwT" id="t02-B5-kKO"/>
+                        <outlet property="legbutton" destination="7QV-sh-n1c" id="Ntw-cu-PXP"/>
+                        <outlet property="medpicker" destination="xjr-JV-3xC" id="azH-ah-FDw"/>
+                        <outlet property="nausea" destination="Jhm-Ru-Stg" id="40u-rN-Fca"/>
+                        <outlet property="nothing" destination="5tm-R5-riJ" id="fAz-qw-KZQ"/>
+                        <outlet property="nottookmed" destination="0jh-tp-aji" id="Cln-Zt-YFh"/>
+                        <outlet property="selectedmed" destination="paq-YI-Cru" id="eYl-gu-Uds"/>
+                        <outlet property="survey" destination="YcX-qh-dXE" id="h0c-NG-lVq"/>
+                        <outlet property="surveyq1" destination="DMX-vM-ylR" id="nVU-zY-Ibw"/>
+                        <outlet property="surveyq2" destination="N5v-3A-lTL" id="tPF-RL-56X"/>
+                        <outlet property="surveyq3" destination="kUC-n4-FgY" id="q1k-c6-B4o"/>
+                        <outlet property="surveyq4" destination="Rf2-Rw-RsF" id="4su-90-S6t"/>
+                        <outlet property="surveyq5" destination="qqs-9Q-f9n" id="xNU-O0-VRz"/>
+                        <outlet property="thankyou" destination="jg2-BF-h8J" id="G8w-oW-x1L"/>
+                        <outlet property="tookmed" destination="t2l-zG-2bp" id="fnt-Wh-dMz"/>
+                        <segue destination="tXz-4F-YIy" kind="show" identifier="SurveyToThanks" id="fc5-CW-ehk"/>
+>>>>>>> 77f6f17bf42b0e36918fa434e9c76e00613920a8
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="189.59999999999999" y="-98.50074962518741"/>
         </scene>
         <!--Profile View Controller-->
@@ -281,4 +500,106 @@
     <inferredMetricsTieBreakers>
         <segue reference="CVT-GW-gkX"/>
     </inferredMetricsTieBreakers>
+=======
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Thank You View Controller-->
+        <scene sceneID="ffy-NN-rpi">
+            <objects>
+                <viewController id="tXz-4F-YIy" customClass="ThankYouViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kc7-jv-sce"/>
+                        <viewControllerLayoutGuide type="bottom" id="eOu-Ms-hLY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sdz-WX-84r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thanks for taking this survey!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cd-7c-i5U">
+                                <rect key="frame" x="64" y="316" width="231" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q4-8f-Ee2">
+                                <rect key="frame" x="16" y="585" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="18"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvA-sH-l4I">
+                                <rect key="frame" x="305" y="578" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="avatar"/>
+                                <connections>
+                                    <action selector="buttonclicked:" destination="oPn-sR-kon" eventType="touchUpInside" id="mMx-tv-J2f"/>
+                                    <action selector="survey:" destination="tXz-4F-YIy" eventType="touchUpInside" id="Mgg-V2-4rv"/>
+                                    <segue destination="ZaZ-aC-4qD" kind="show" identifier="surveytoavatar" id="1KN-sE-pEg"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thanks.png" translatesAutoresizingMaskIntoConstraints="NO" id="wLD-lm-Sg5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5DH-IN-Dqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oPn-sR-kon" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="928.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Avatar View Controller-->
+        <scene sceneID="y0z-RF-Lcy">
+            <objects>
+                <viewController id="ZaZ-aC-4qD" customClass="AvatarViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2wp-Lv-kEi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zlb-2m-re1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pJV-A6-Xah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yaa.png" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-Xn-9vE">
+                                <rect key="frame" x="124" y="60" width="153" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Avatar Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdB-2t-hbM">
+                                <rect key="frame" x="151" y="124" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose An Avatar!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Da-gE-2f3">
+                                <rect key="frame" x="151" y="28" width="143" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HeyPrettyGirl" family="Hey Pretty Girl" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatar" destination="FzW-Xn-9vE" id="dbZ-gA-S0X"/>
+                        <outlet property="chooseanavatar" destination="3Da-gE-2f3" id="8kV-N8-BIG"/>
+                        <outlet property="yah" destination="UdB-2t-hbM" id="2en-rc-l69"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SH9-Pr-Vr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thanks.png" width="328" height="640"/>
+        <image name="yaa.png" width="500" height="500"/>
+    </resources>
+>>>>>>> 77f6f17bf42b0e36918fa434e9c76e00613920a8
 </document>
